@@ -6,7 +6,6 @@ from typing import List, Optional, Dict, Any
 
 app = FastAPI()
 
-# 靜態頁面
 @app.get("/", include_in_schema=False)
 async def index(request: Request):
     return FileResponse("./static/index.html", media_type="text/html")

@@ -3,7 +3,7 @@ import pymysql
 
 def get_db_connection():
     return pymysql.connect(
-        host='localhost',
+        host='172.31.4.255',
         user='root',
         password='root',
         database='official_website',
