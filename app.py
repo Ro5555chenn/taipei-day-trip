@@ -25,7 +25,7 @@ async def thankyou(request: Request):
 def get_db_connection():
     try:
         connection = mysql.connector.connect(
-            host="localhost",
+            host="54.206.86.195",
             user="root",
             password="root",
             database="official_website"
