@@ -40,14 +40,8 @@ def save_attractions_to_db(attraction_data):
 
 def main():
     filename = 'data/taipei-attractions.json'
-
-    # 載入景點資料
     attraction_data = load_attraction_data(filename)
-
-    # 篩選圖片 URL
     filter_image_urls(attraction_data)
-
-    # 儲存景點資料到資料庫
     save_attractions_to_db(attraction_data)
 
 if __name__ == "__main__":
